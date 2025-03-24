@@ -31,7 +31,7 @@ confirm_deletion() {
     deletions=$(rsync -arvh --progress --delete --dry-run "$src" "$dest" 2>&1 | grep -oP '(?<=deleting ).*')
 
     if [ -n "$deletions" ]; then
-    	echo "WARNING! Sync will delete date in $dest:"
+    	echo "WARNING! Sync will delete data in $dest:"
         echo "$deletions"
         echo ""
         read -p "Do you want to proceed with deletion? (y/n): " choice
