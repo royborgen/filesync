@@ -8,6 +8,11 @@ A Bash script for safe file synchronization between local and remote systems usi
 - Uses rsync for efficient and reliable file transfers.
 
 
+## Requirements
+- rsync installed
+- SSH access to remote system
+- Write permission to destination folder. 
+
 ## Usage
 Run the script via an alias (filesync) with one of the following options:
 
