@@ -1,0 +1,3 @@
+remotehost="server.example.com"
+remotedir="/backup/Documents/"
+localdir="$HOME/Documents/"
