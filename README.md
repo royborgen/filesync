@@ -37,7 +37,7 @@ chmod +x filesync.sh
 
 3. Rename `config.sample` to `config` and edit variables as needed
 
-4. You can now sync your files by executing filesync by typing `./filesync.sh` from in the scripts folder
+4. You can now sync your files by executing `./filesync.sh` from the scripts folder
 
 ## Optional
 It is recommended to create an alias for simple execution. 
