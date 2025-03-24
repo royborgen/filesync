@@ -1,5 +1,5 @@
 # filesync
-A Bash script for safe file synchronization between local and remote systems using rsync. Supports push (local → remote) and pull (remote → local) operations with interactive prompts to confirm deletions. Configurable via a separate config file for easy host management.
+A Bash script for safe simple file synchronization between a local folder and a remote system using rsync. Supports push (local → remote) and pull (remote → local) operations with interactive prompts to confirm deletions. The script is configurable via a separate config file for easy management.
 
 ## Features
 - Two-way sync: Push files to a remote host or pull files to your local machine.
