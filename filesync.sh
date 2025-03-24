@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# Importing config vars to keep track of hosts for simple management
-source ./config
+# A variable to keep track of the scripts source folder
+SCRIPT_PATH="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Fetching config variables from config-file
+source "$SCRIPT_PATH/config"
 
 # Function to check if remote system has files that do not exist locally
 check_remote_files_not_in_local() {
@@ -42,8 +45,8 @@ confirm_deletion() {
 
 # Display help if -h or --help is passed as an argument
 if [ $# -eq 0 ] || [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
-	echo "Usage: sync [OPTION]"
-    	echo "Syncs a folder between two hosts using rsync"
+	echo "Usage: filesync [OPTION]"
+    	echo "Safe file syncronization between local and a remote host using rsync"
     	echo ""
     	echo "Optional arguments:"
     	echo "push           Pushes data to the remote system"
