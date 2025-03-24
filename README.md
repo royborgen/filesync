@@ -43,7 +43,7 @@ chmod +x filesync.sh
 It is recommended to create an alias for simple execution. 
 1. Create the file `~/.bash_aliases` (or edit if it already exist). Add the following line: 
 ```
-alias sync="$HOME/path/to/filesync/filesync.sh"
+alias filesync="$HOME/path/to/filesync/filesync.sh"
 ```
 2. Reload bash by typing the command `bash` 
 
