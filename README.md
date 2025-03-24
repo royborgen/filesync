@@ -9,12 +9,12 @@ A Bash script for safe file synchronization between local and remote systems usi
 
 
 ## Usage
-Run the script via an alias (sync) with one of the following options:
+Run the script via an alias (filesync) with one of the following options:
 
 ```
-sync push     # Sync local directory to remote
-sync pull     # Sync remote directory to local
-sync --help   # Display help message
+filesync push     # Sync local directory to remote
+filesync pull     # Sync remote directory to local
+filesync --help   # Display help message
 ```
 
 ## Setup
@@ -27,22 +27,22 @@ cd filesync
 
 2. Make the script executable
 ```
-chmod +x sync.sh
+chmod +x filesync.sh
 ```
 
 3. Rename `config.sample` to `config` and edit variables as needed
 
-4. You can now sync your files by executing filesync by typing `./sync.sh` from in the scripts folder
+4. You can now sync your files by executing filesync by typing `./filesync.sh` from in the scripts folder
 
 ## Optional
 It is recommended to create an alias for simple execution. 
 1. Create the file `~/.bash_aliases` (or edit if it already exist). Add the following line: 
 ```
-alias sync="$HOME/path/to/filesync/sync.sh"
+alias sync="$HOME/path/to/filesync/filesync.sh"
 ```
 2. Reload bash by typing the command `bash` 
 
-You can now execute the script by typing the command `sync` from anywhere. 
+You can now execute the script by typing the command `filesync` from anywhere. 
 
 ## License
 This script is open source and licensend under the GPL-2.0 license. See the projects `LICENSE`file for details. 
